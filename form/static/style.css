@@ -1,0 +1,101 @@
+body{
+background: linear-gradient(45deg, #60BDD1, #DE60BB);
+font-family: Georgia,Garamond,Serif;
+font-size: medium;
+font-style: oblique;
+color: black;
+font-weight: normal;
+letter-spacing: 1px;
+line-height: 1.6;
+padding: 20px;
+}
+
+.container{
+
+width: 80%;
+margin: auto;
+}
+
+#main{
+    border: 2px grey none;
+    background-color: #EAEAF3;
+    border-radius: 5px;
+    margin-top: 100px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); padding: 20px;
+
+
+}
+
+.myForm{
+    padding: 10px;
+    margin:15px;
+}
+
+.myForm label{
+    display: block;
+    padding-top: 20px;
+
+}
+.myForm input[type="text"],.myForm input[type="email"],.myForm textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+    max-width: 100%;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+.mainHeader h1{
+    text-shadow: 1px 1px 2px darkslategrey;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: -30px;
+
+}
+.myForm .button {
+    all: unset; /* resets all default button/input styles */
+    display: block;
+    width: 96%;
+    padding: 8px 18px;
+    margin: 25px 0;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(45deg, #60BDD1, #DE60BB);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, color 0.3s ease;
+    border: none;
+}
+
+.myForm .button:hover {
+    background: #ff4d4d; /* override gradient with solid color */
+    color: white;
+}
+
+.myForm input:focus,
+.myForm textarea:focus {
+    outline: none;
+    border: 1px solid #60BDD1;
+    box-shadow: 0 0 5px rgba(96, 189, 209, 0.5);
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    #main {
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .myForm input,
+    .myForm textarea,
+    .myForm .button {
+        font-size: 16px;
+    }
+}
